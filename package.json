@@ -1,0 +1,26 @@
+{
+  "name": "react-native-progressive-image",
+  "version": "0.0.1",
+  "description": "Lazy load images. Load's image with different resolution to remove loading glitch in image.",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Mohan Upadhyay",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhnpd/react-native-lazy-image"
+  },
+  "bugs": {
+    "url": "https://github.com/mhnpd/react-native-lazy-image/issue"
+  },
+  "homepage": "https://github.com/mhnpd/react-native-lazy-image",
+
+  "keywords": [
+    "android",
+    "blur",
+    "fade",
+    "ios",
+    "lazy loading",
+    "progressive",
+    "react-native"
+  ]
+}
