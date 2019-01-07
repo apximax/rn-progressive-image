@@ -33,6 +33,7 @@ React Native lazy and animated image loading.
 | **`thumbnailFadeDuration`** | Fade-in duration for the thumbnail in ms. | `250` |
 | **`onLoadThumbnail`** | Callback function that gets called when the thumbnail is loaded. | `noop` |
 | **`onLoadImage`** | Callback function that gets called when the main image is loaded. | `noop` |
+| **`placeHolderSource`**|Image placeholder image for not image url/ initial loading|'noop'|
 
 # TODO
 

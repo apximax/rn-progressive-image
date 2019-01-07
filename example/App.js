@@ -9,6 +9,8 @@ export default class App extends React.Component {
        <ProgressiveImage
         thumbnailSource={{ uri: 'https://i.ibb.co/Y80YDf2/Sample-JPGImage-10mbmb-min.jpg?bust' + Math.random()}}
         imageSource={{ uri:'https://docs.google.com/uc?id=1ZLBzOnySD8CGzxo4-4f9pllz2FnkGm5W'}}
+        thumbnailFadeDuration={1000}
+        imageFadeDuration={1000}
         style={{  width:400, height:400, alignSelf:"center" }}
     />
       </View>
