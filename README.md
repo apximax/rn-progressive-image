@@ -7,6 +7,8 @@ React Native lazy and animated image loading.
 
 # Demo
 
+![](name-of-giphy.gif)
+
 # Implementation
 
 ```
