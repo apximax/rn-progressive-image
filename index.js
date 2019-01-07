@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from "react-propTypes"
 import { Animated, View, Image, StyleSheet } from 'react-native'
 
-export default class LazyImage extends Component {
+export default class ProgressiveImage extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -63,7 +63,7 @@ export default class LazyImage extends Component {
    },
  })
 
- LazyImage.propTypes = {
+ ProgressiveImage.propTypes = {
   placeHolderColor: PropTypes.string,
   placeHolderSource: PropTypes.number,
   imageSource: PropTypes.object.isRequired,
@@ -75,7 +75,7 @@ export default class LazyImage extends Component {
   thumbnailBlurRadius: PropTypes.number,
 }
 
-LazyImage.defaultProps = {
+ProgressiveImage.defaultProps = {
   thumbnailFadeDuration: 250,
   imageFadeDuration: 250,
   thumbnailBlurRadius: 5,
