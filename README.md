@@ -1,4 +1,4 @@
-# react-native-Progressive-image
+# React Native Progressive Image
 React Native lazy and animated image loading.
 
 # Installation
