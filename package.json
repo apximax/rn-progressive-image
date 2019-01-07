@@ -1,6 +1,6 @@
 {
   "name": "rn-progressive-image",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Lazy load images. Load's image with different resolution to remove loading glitch in image.",
   "main": "index.js",
   "license": "MIT",
