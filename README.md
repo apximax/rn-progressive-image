@@ -5,6 +5,8 @@ React Native lazy and animated image loading.
 
 ``` npm i rn-progressive-image ```
 
+# Demo
+
 # Implementation
 
 ```
