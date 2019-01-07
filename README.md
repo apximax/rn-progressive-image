@@ -7,6 +7,9 @@ React Native lazy and animated image loading.
 
 # Demo
 
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/33191954/50756229-97e69e80-1283-11e9-8252-b7fb42593bb2.gif)
+
+
 # Implementation
 
 ```
