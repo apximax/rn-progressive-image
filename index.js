@@ -26,6 +26,14 @@ export default class ProgressiveImage extends Component {
     }).start()
     this.props.onLoadImage()
   }
+  
+  onLoadThumbnailError(event) {
+    this.props.onLoadThumbnailError(event)
+  }
+  
+  onLoadImageError(event) {
+    this.props.onLoadImageError(event)
+  }
 
   render() {
     return (
@@ -40,6 +48,7 @@ export default class ProgressiveImage extends Component {
           style={[styles.image, { opacity: this.state.thumbnailOpacity }, this.props.style]}
           source={this.props.thumbnailSource}
           onLoad={() => this.onLoadThumbnail()}
+          onError={(event) => this.onLoadThumbnailError(event)}
           blurRadius={this.props.thumbnailBlurRadius}
         />
         <Animated.Image
@@ -47,6 +56,7 @@ export default class ProgressiveImage extends Component {
           style={[styles.image, { opacity: this.state.imageOpacity }, this.props.style]}
           source={this.props.imageSource}
           onLoad={() => this.onLoadImage()}
+          onError={(event) => this.onLoadImageError(event)}
         />
       </View>
     )
@@ -71,6 +81,8 @@ export default class ProgressiveImage extends Component {
   resizeMode: PropTypes.string,
   onLoadThumbnail: PropTypes.func.isRequired,
   onLoadImage: PropTypes.func.isRequired,
+  onLoadThumbnailError: PropTypes.func,
+  onLoadImageError: PropTypes.func,
   thumbnailSource: PropTypes.object.isRequired,
   thumbnailFadeDuration: PropTypes.number.isRequired,
   thumbnailBlurRadius: PropTypes.number,
@@ -83,4 +95,6 @@ ProgressiveImage.defaultProps = {
   resizeMode: 'cover',
   onLoadThumbnail: Function.prototype,
   onLoadImage: Function.prototype,
+  onLoadThumbnailError: Function.prototype,
+  onLoadImageError: Function.prototype,
 }
